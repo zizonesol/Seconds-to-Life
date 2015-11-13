@@ -29,7 +29,7 @@
 		ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */; };
 		ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831C1BF0311F00DFE105 /* libz.tbd */; };
 		ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */; };
-		ED8FF8361BF562B100A51610 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FF8351BF562B100A51610 /* SettingsViewController.swift */; };
+		EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */; };
 		EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +79,7 @@
 		ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ED3D831C1BF0311F00DFE105 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		ED8FF8351BF562B100A51610 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,7 +175,7 @@
 				ED3D82C61BEDB84800DFE105 /* Info.plist */,
 				ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */,
 				EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */,
-				ED8FF8351BF562B100A51610 /* SettingsViewController.swift */,
+				EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */,
 			);
 			path = CPR;
 			sourceTree = "<group>";
@@ -332,7 +332,7 @@
 				ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */,
 				ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */,
 				EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */,
-				ED8FF8361BF562B100A51610 /* SettingsViewController.swift in Sources */,
+				EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */,
 				ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
