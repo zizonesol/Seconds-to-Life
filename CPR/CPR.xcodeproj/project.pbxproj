@@ -29,7 +29,11 @@
 		ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */; };
 		ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831C1BF0311F00DFE105 /* libz.tbd */; };
 		ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */; };
+		ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */; };
+		ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */; };
 		EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */; };
+		EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */; };
+		EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */; };
 		EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +83,11 @@
 		ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ED3D831C1BF0311F00DFE105 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Beep.wav; sourceTree = "<group>"; };
+		ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CountUp.wav; sourceTree = "<group>"; };
 		EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRViewController.swift; sourceTree = "<group>"; };
+		EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */,
 				ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */,
 				ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */,
 				ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */,
@@ -125,6 +134,7 @@
 		7656EF6391629ABBEB431ABD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */,
 				ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */,
 				ED3D831C1BF0311F00DFE105 /* libz.tbd */,
 				ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */,
@@ -167,6 +177,8 @@
 		ED3D82B91BEDB84800DFE105 /* CPR */ = {
 			isa = PBXGroup;
 			children = (
+				ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */,
+				ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */,
 				ED3D82BA1BEDB84800DFE105 /* AppDelegate.swift */,
 				ED3D82BC1BEDB84800DFE105 /* ViewController.swift */,
 				ED3D82BE1BEDB84800DFE105 /* Main.storyboard */,
@@ -176,6 +188,7 @@
 				ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */,
 				EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */,
 				EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */,
+				EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */,
 			);
 			path = CPR;
 			sourceTree = "<group>";
@@ -302,7 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */,
 				ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */,
+				ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */,
 				ED3D82C21BEDB84800DFE105 /* Assets.xcassets in Resources */,
 				ED3D82C01BEDB84800DFE105 /* Main.storyboard in Resources */,
 			);
@@ -331,6 +346,7 @@
 			files = (
 				ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */,
 				ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */,
+				EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */,
 				EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */,
 				EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */,
 				ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */,

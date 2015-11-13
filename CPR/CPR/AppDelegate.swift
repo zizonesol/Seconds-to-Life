@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("EmergencyView")
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("CPRView")
             
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
