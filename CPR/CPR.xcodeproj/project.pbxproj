@@ -14,6 +14,23 @@
 		ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3D82C31BEDB84800DFE105 /* LaunchScreen.storyboard */; };
 		ED3D82D01BEDB84800DFE105 /* CPRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82CF1BEDB84800DFE105 /* CPRTests.swift */; };
 		ED3D82DB1BEDB84800DFE105 /* CPRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82DA1BEDB84800DFE105 /* CPRUITests.swift */; };
+		ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */; };
+		ED3D83051BF030A900DFE105 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D82FE1BF030A900DFE105 /* Bolts.framework */; };
+		ED3D83061BF030A900DFE105 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D82FF1BF030A900DFE105 /* Parse.framework */; };
+		ED3D83071BF030A900DFE105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */; };
+		ED3D830B1BF030A900DFE105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83041BF030A900DFE105 /* ParseUI.framework */; };
+		ED3D830D1BF030F000DFE105 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */; };
+		ED3D830F1BF030F600DFE105 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D830E1BF030F600DFE105 /* CFNetwork.framework */; };
+		ED3D83111BF030FC00DFE105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */; };
+		ED3D83131BF0310300DFE105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83121BF0310300DFE105 /* CoreLocation.framework */; };
+		ED3D83151BF0310800DFE105 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83141BF0310800DFE105 /* QuartzCore.framework */; };
+		ED3D83171BF0310C00DFE105 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83161BF0310C00DFE105 /* Security.framework */; };
+		ED3D83191BF0311100DFE105 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83181BF0311100DFE105 /* StoreKit.framework */; };
+		ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */; };
+		ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831C1BF0311F00DFE105 /* libz.tbd */; };
+		ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */; };
+		ED8FF8361BF562B100A51610 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FF8351BF562B100A51610 /* SettingsViewController.swift */; };
+		EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +64,23 @@
 		ED3D82D61BEDB84800DFE105 /* CPRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3D82DA1BEDB84800DFE105 /* CPRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRUITests.swift; sourceTree = "<group>"; };
 		ED3D82DC1BEDB84800DFE105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		ED3D82FE1BF030A900DFE105 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ED3D82FF1BF030A900DFE105 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		ED3D83041BF030A900DFE105 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ED3D830E1BF030F600DFE105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED3D83121BF0310300DFE105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ED3D83141BF0310800DFE105 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED3D83161BF0310C00DFE105 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED3D83181BF0311100DFE105 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ED3D831C1BF0311F00DFE105 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ED8FF8351BF562B100A51610 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */,
+				ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */,
+				ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */,
+				ED3D83191BF0311100DFE105 /* StoreKit.framework in Frameworks */,
+				ED3D83171BF0310C00DFE105 /* Security.framework in Frameworks */,
+				ED3D83151BF0310800DFE105 /* QuartzCore.framework in Frameworks */,
+				ED3D83131BF0310300DFE105 /* CoreLocation.framework in Frameworks */,
+				ED3D83111BF030FC00DFE105 /* CoreGraphics.framework in Frameworks */,
+				ED3D830F1BF030F600DFE105 /* CFNetwork.framework in Frameworks */,
+				ED3D830D1BF030F000DFE105 /* AudioToolbox.framework in Frameworks */,
+				ED3D83061BF030A900DFE105 /* Parse.framework in Frameworks */,
+				ED3D83071BF030A900DFE105 /* ParseCrashReporting.framework in Frameworks */,
+				ED3D830B1BF030A900DFE105 /* ParseUI.framework in Frameworks */,
+				ED3D83051BF030A900DFE105 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +122,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7656EF6391629ABBEB431ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */,
+				ED3D831C1BF0311F00DFE105 /* libz.tbd */,
+				ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */,
+				ED3D83181BF0311100DFE105 /* StoreKit.framework */,
+				ED3D83161BF0310C00DFE105 /* Security.framework */,
+				ED3D83141BF0310800DFE105 /* QuartzCore.framework */,
+				ED3D83121BF0310300DFE105 /* CoreLocation.framework */,
+				ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */,
+				ED3D830E1BF030F600DFE105 /* CFNetwork.framework */,
+				ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */,
+				ED3D82FE1BF030A900DFE105 /* Bolts.framework */,
+				ED3D82FF1BF030A900DFE105 /* Parse.framework */,
+				ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */,
+				ED3D83041BF030A900DFE105 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED3D82AE1BEDB84800DFE105 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +150,7 @@
 				ED3D82CE1BEDB84800DFE105 /* CPRTests */,
 				ED3D82D91BEDB84800DFE105 /* CPRUITests */,
 				ED3D82B81BEDB84800DFE105 /* Products */,
+				7656EF6391629ABBEB431ABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +173,9 @@
 				ED3D82C11BEDB84800DFE105 /* Assets.xcassets */,
 				ED3D82C31BEDB84800DFE105 /* LaunchScreen.storyboard */,
 				ED3D82C61BEDB84800DFE105 /* Info.plist */,
+				ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */,
+				EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */,
+				ED8FF8351BF562B100A51610 /* SettingsViewController.swift */,
 			);
 			path = CPR;
 			sourceTree = "<group>";
@@ -257,6 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */,
+				ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */,
+				EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */,
+				ED8FF8361BF562B100A51610 /* SettingsViewController.swift in Sources */,
 				ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +475,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CPR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPR;
@@ -410,6 +491,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CPR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPR;
@@ -484,6 +570,7 @@
 				ED3D82E11BEDB84800DFE105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED3D82E21BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "CPRTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +579,7 @@
 				ED3D82E41BEDB84800DFE105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED3D82E51BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "CPRUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +588,7 @@
 				ED3D82E71BEDB84800DFE105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
