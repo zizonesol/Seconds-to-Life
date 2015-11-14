@@ -13,7 +13,7 @@ class TimerViewController: UIViewController {
     let progressIndicatorView = CircularLoaderView(frame: CGRectZero)
     var timer = NSTimer()
     var count = 0
-    var maxCount = 60
+    var maxCount = 10
     
     @IBOutlet var timerLabel: UILabel!
     
@@ -33,8 +33,15 @@ class TimerViewController: UIViewController {
     }
     
     func countUp() {
-        count++
-        timerLabel.text = String(count)
+        if count < maxCount {
+            count++
+            timerLabel.text = String(count)
+        }
+        else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("PulseViewController")
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
     }
 
     /*
@@ -46,8 +53,4 @@ class TimerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    class CustomImageView {
-        
-    }
 }
