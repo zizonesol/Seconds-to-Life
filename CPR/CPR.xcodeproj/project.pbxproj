@@ -32,6 +32,10 @@
 		ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */; };
 		ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */; };
 		ED92E0FB1BF65719007D6AA7 /* VideoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E0FA1BF65719007D6AA7 /* VideoPageViewController.swift */; };
+		ED92E1001BF7E2B7007D6AA7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E0FF1BF7E2B7007D6AA7 /* TableViewCell.swift */; };
+		ED92E1021BF7E826007D6AA7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED92E1011BF7E826007D6AA7 /* Settings.bundle */; };
+		ED92E1041BF7E92F007D6AA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1031BF7E92F007D6AA7 /* TableViewController.swift */; };
+		ED92E1081BF7F04E007D6AA7 /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */; };
 		EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */; };
 		EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */; };
 		EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */; };
@@ -87,6 +91,11 @@
 		ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Beep.wav; sourceTree = "<group>"; };
 		ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CountUp.wav; sourceTree = "<group>"; };
 		ED92E0FA1BF65719007D6AA7 /* VideoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPageViewController.swift; sourceTree = "<group>"; };
+		ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4"; sourceTree = "<group>"; };
+		ED92E0FF1BF7E2B7007D6AA7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		ED92E1011BF7E826007D6AA7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		ED92E1031BF7E92F007D6AA7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTimer.swift; sourceTree = "<group>"; };
 		EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRViewController.swift; sourceTree = "<group>"; };
 		EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -158,6 +167,7 @@
 		ED3D82AE1BEDB84800DFE105 = {
 			isa = PBXGroup;
 			children = (
+				ED92E1011BF7E826007D6AA7 /* Settings.bundle */,
 				ED3D82B91BEDB84800DFE105 /* CPR */,
 				ED3D82CE1BEDB84800DFE105 /* CPRTests */,
 				ED3D82D91BEDB84800DFE105 /* CPRUITests */,
@@ -179,6 +189,7 @@
 		ED3D82B91BEDB84800DFE105 /* CPR */ = {
 			isa = PBXGroup;
 			children = (
+				ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */,
 				ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */,
 				ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */,
 				ED3D82BA1BEDB84800DFE105 /* AppDelegate.swift */,
@@ -192,6 +203,9 @@
 				EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */,
 				EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */,
 				ED92E0FA1BF65719007D6AA7 /* VideoPageViewController.swift */,
+				ED92E0FF1BF7E2B7007D6AA7 /* TableViewCell.swift */,
+				ED92E1031BF7E92F007D6AA7 /* TableViewController.swift */,
+				ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */,
 			);
 			path = CPR;
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 				ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */,
 				ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */,
 				ED3D82C21BEDB84800DFE105 /* Assets.xcassets in Resources */,
+				ED92E1021BF7E826007D6AA7 /* Settings.bundle in Resources */,
 				ED3D82C01BEDB84800DFE105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,11 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */,
+				ED92E1001BF7E2B7007D6AA7 /* TableViewCell.swift in Sources */,
 				ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */,
+				ED92E1081BF7F04E007D6AA7 /* CircleTimer.swift in Sources */,
 				EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */,
 				ED92E0FB1BF65719007D6AA7 /* VideoPageViewController.swift in Sources */,
 				EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */,
 				EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */,
+				ED92E1041BF7E92F007D6AA7 /* TableViewController.swift in Sources */,
 				ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

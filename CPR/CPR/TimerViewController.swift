@@ -12,8 +12,6 @@ class TimerViewController: UIViewController {
 
     let progressIndicatorView = CircularLoaderView(frame: CGRectZero)
     var timer = NSTimer()
-    var count = 0
-    var maxCount = 10
     
     @IBOutlet var timerLabel: UILabel!
     
@@ -21,10 +19,7 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        timerLabel.text = String(count)
-        
-        timer = NSTimer(timeInterval: 1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
-        NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+                timer = NSTimer.scheduledTimerWithTimeInterval(30.0, target: self, selector: "startNextView", userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,17 +27,12 @@ class TimerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func countUp() {
-        if count < maxCount {
-            count++
-            timerLabel.text = String(count)
-        }
-        else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("PulseViewController")
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
+    func startNextView() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("PulseViewController")
+        self.presentViewController(vc, animated: true, completion: nil)
     }
+
 
     /*
     // MARK: - Navigation
