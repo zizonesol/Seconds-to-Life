@@ -19,13 +19,11 @@ class CPRViewController: UIViewController {
         super.viewDidLoad()
         do {
             audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
+            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "playClip", userInfo: nil, repeats: true)
         }
         catch {
             
         }
-        
-        audioPlayer.prepareToPlay()
-        audioPlayer.play()
         // Do any additional setup after loading the view.
 
     }
@@ -35,6 +33,13 @@ class CPRViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func playClip() {
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        
+        //Used to vibrate
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+    }
 
     /*
     // MARK: - Navigation

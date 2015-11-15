@@ -13,9 +13,35 @@ class TableViewController: UITableViewController {
     @IBOutlet var myTableView: UITableView!
     @IBOutlet var pushOutlet: UISwitch!
     @IBOutlet var locationOutlet: UISwitch!
+    @IBOutlet var experienceOutlet: UISwitch!
+    @IBOutlet var certifiedOutlet: UISwitch!
+    @IBOutlet var vibrationOutlet: UISwitch!
+    @IBOutlet var voiceOutlet: UISwitch!
+    
+    @IBAction func pushNotificationChanged(sender: AnyObject) {
+    }
+    
+    @IBAction func locationAuthorizedChanged(sender: AnyObject) {
+    }
+    
+    @IBAction func experienceChanged(sender: AnyObject) {
+    }
+    
+    @IBAction func certifiedChanged(sender: AnyObject) {
+    }
+    
+    @IBAction func vibrationChanged(sender: AnyObject) {
+    }
+    
+    @IBAction func voiceChanged(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        
         pushOutlet.setOn(false, animated: true)
 
         // Uncomment the following line to preserve selection between presentations
@@ -39,7 +65,7 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 6
     }
 
     /*
