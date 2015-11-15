@@ -148,6 +148,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="Jgt-yd-Ldw" kind="show" id="XWM-p6-l1U"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KuO-Xf-rqg">
                                         <rect key="frame" x="0.0" y="44" width="600" height="44"/>
@@ -167,9 +170,6 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
-                                        <connections>
-                                            <segue destination="bYe-n0-cxT" kind="show" id="Uw3-MN-xZN"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LPM-xW-lEs">
                                         <rect key="frame" x="0.0" y="88" width="600" height="44"/>
@@ -193,6 +193,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tM5-nA-9Ng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="1712.5"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="R5C-i4-Tfx">
+            <objects>
+                <tableViewController id="Jgt-yd-Ldw" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EmV-Fd-gx0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="e4Q-It-F7W">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="156" id="Dic-4S-rqB">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dic-4S-rqB" id="kVx-3l-AQZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="287-RP-bPq">
+                                                    <rect key="frame" x="8" y="0.0" width="584" height="155"/>
+                                                    <animations/>
+                                                    <connections>
+                                                        <segue destination="dy9-SS-dzd" kind="show" id="Mod-b3-IBI"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="192" id="j6g-e5-idJ">
+                                        <rect key="frame" x="0.0" y="156" width="600" height="192"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j6g-e5-idJ" id="SqY-gX-EBe">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="191"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tOP-HA-TpK">
+                                        <rect key="frame" x="0.0" y="348" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOP-HA-TpK" id="1xc-Ru-GIb">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Jgt-yd-Ldw" id="pej-uQ-11r"/>
+                            <outlet property="delegate" destination="Jgt-yd-Ldw" id="ttr-hS-lLF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awg-uQ-cnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="1712.5"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="rpC-LS-oDN">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="dy9-SS-dzd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKX-CY-Erz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589" y="1747"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LeI-rx-H7K">
@@ -576,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5l-8K-wgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215" y="390"/>
+            <point key="canvasLocation" x="2215" y="385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8nB-7W-Thu">
@@ -590,8 +662,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you feel a pulse at least 5 times?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-uj-wlP">
-                                <rect key="frame" x="161" y="28" width="279" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you feel their pulse at least 5 times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-uj-wlP">
+                                <rect key="frame" x="144" y="28" width="296" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -625,7 +697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DmE-Hb-9O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2861" y="390"/>
+            <point key="canvasLocation" x="2860" y="385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OEM-UV-8Jn">
@@ -639,8 +711,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the person a child or an adult?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-wu-qYh">
-                                <rect key="frame" x="176" y="28" width="248" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is the person a infant or an adult?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-wu-qYh">
+                                <rect key="frame" x="169" y="28" width="255" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -654,10 +726,10 @@
                                     <segue destination="hzL-1G-V0w" kind="show" id="wX3-B0-mB5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-lS-16d">
-                                <rect key="frame" x="282" y="206" width="36" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-lS-16d">
+                                <rect key="frame" x="280" y="206" width="40" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Child"/>
+                                <state key="normal" title="Infant"/>
                                 <connections>
                                     <segue destination="SjF-ER-QHa" kind="show" id="BqL-ZO-epk"/>
                                 </connections>
@@ -677,7 +749,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryc-xp-bcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509" y="390"/>
+            <point key="canvasLocation" x="3509" y="385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3tE-5u-hWB">
@@ -690,13 +762,37 @@
                     <view key="view" contentMode="scaleToFill" id="aYT-Nz-bgv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="First find the location where you will be applying pressure and use only two fingers to perform cpr." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i9-fJ-42v">
+                                <rect key="frame" x="20" y="20" width="560" height="45"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="5gD-ZJ-sJz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-4I-pC8">
+                                <rect key="frame" x="284" y="542" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="dyW-MY-SNf" kind="show" id="sZ3-r9-Sea"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infant-cpr-Common-Injuries-Article" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-x4-Zvh">
+                                <rect key="frame" x="20" y="90" width="560" height="430"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq8-PD-ZzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4223" y="52"/>
+            <point key="canvasLocation" x="4544" y="92"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yuj-sk-98k">
@@ -710,8 +806,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locate the position to begin chest compressions, and then when ready follow the instructions when you hit next." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-XL-8MN">
-                                <rect key="frame" x="20" y="28" width="560" height="110"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First find the location where you will be applying pressure." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-XL-8MN">
+                                <rect key="frame" x="20" y="28" width="560" height="37"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="sPC-gw-Z3d"/>
@@ -720,12 +816,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmu-AC-HBw">
-                                <rect key="frame" x="275" y="494" width="32" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpr_location_adult" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-o9-TZq">
+                                <rect key="frame" x="20" y="73" width="560" height="430"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmu-AC-HBw">
+                                <rect key="frame" x="284" y="550" width="32" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="dyW-MY-SNf" kind="show" id="be5-lM-bws"/>
+                                    <segue destination="mF0-QX-pZ3" kind="show" id="LNz-6h-Sl3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -770,7 +870,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MF-zY-SGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5023" y="506"/>
+            <point key="canvasLocation" x="5576" y="461"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FjZ-D4-WX6">
+            <objects>
+                <viewController id="mF0-QX-pZ3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hCv-Pu-fei"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XN-ca-jKa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uEl-sf-pns">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interlock your fingers like so, and position them above the chest." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLK-3k-7JD">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpr-interlocked" translatesAutoresizingMaskIntoConstraints="NO" id="PCD-o6-PSH">
+                                <rect key="frame" x="20" y="62" width="566" height="461"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-zb-I4k">
+                                <rect key="frame" x="287" y="550" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="dyW-MY-SNf" kind="show" id="jwx-7X-XvA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RT-Sp-ZWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4865" y="759"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="NOU-8D-zdi">
@@ -1047,31 +1187,34 @@
             <point key="canvasLocation" x="903" y="-252"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="PA2-AK-wD5">
+        <scene sceneID="Mqc-fv-9Mj">
             <objects>
-                <viewController id="bYe-n0-cxT" sceneMemberID="viewController">
+                <viewController id="VLu-fM-apn" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ay5-34-gVf"/>
-                        <viewControllerLayoutGuide type="bottom" id="PEu-CC-f8i"/>
+                        <viewControllerLayoutGuide type="top" id="6EC-Nh-Ank"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Tq-ss-dhd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mzO-bX-c4J">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                    <view key="view" contentMode="scaleToFill" id="jcL-XM-TST">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfb-s5-Dz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2l-9s-cBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="1712.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="check-response-during-cpr-course" width="662" height="1000"/>
+        <image name="cpr-interlocked" width="638" height="479"/>
+        <image name="cpr_location_adult" width="640" height="421"/>
         <image name="hwkb17_071" width="460" height="300"/>
+        <image name="infant-cpr-Common-Injuries-Article" width="315" height="315"/>
         <image name="stock-photo-check-your-pulse-on-neck-166002530" width="450" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PuF-om-pS0"/>
+        <segue reference="uhg-8a-OmF"/>
+        <segue reference="sZ3-r9-Sea"/>
     </inferredMetricsTieBreakers>
 </document>

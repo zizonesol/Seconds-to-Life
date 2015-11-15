@@ -13,21 +13,34 @@ class CPRViewController: UIViewController {
 
     var timer = NSTimer()
     var audioPlayer = AVAudioPlayer()
-    var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("CountUp", ofType: "wav")!)
-    let userDefaults = NSUserDefaults.standardUserDefaults()
+    var alertSound: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("CountUp", ofType: "wav")!)
+    var voiceEnabled = false
+    var vibrationEnabled = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var voiceEnabled = userDefaults.boolForKey("voice")
-        var vibrationEnabled = userDefaults.boolForKey("vibration")
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        voiceEnabled = userDefaults.boolForKey("voice")
+        vibrationEnabled = userDefaults.boolForKey("vibration")
+        
+        if voiceEnabled {
+            alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("CountUp", ofType: "wav")!)
+        }
+        else {
+            alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Metronome", ofType: "mp3")!)
+        }
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-            timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "playClip", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.0, target: self, selector: "playClip", userInfo: nil, repeats: true)
         }
         catch {
             
         }
+        
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
         // Do any additional setup after loading the view.
 
     }
@@ -40,9 +53,10 @@ class CPRViewController: UIViewController {
     func playClip() {
         audioPlayer.prepareToPlay()
         audioPlayer.play()
+    }
+    
+    func playVibration() {
         
-        //Used to vibrate
-        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
 
     /*

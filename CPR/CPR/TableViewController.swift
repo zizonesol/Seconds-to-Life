@@ -24,7 +24,7 @@ class TableViewController: UITableViewController {
     let manager = CLLocationManager()
     
     @IBAction func pushNotificationChanged(sender: AnyObject) {
-        userDefaults.setBool(!pushOutlet.on, forKey: "push")
+        userDefaults.setBool(pushOutlet.on, forKey: "push")
         userDefaults.synchronize()
     }
     
@@ -71,27 +71,27 @@ class TableViewController: UITableViewController {
             
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-        userDefaults.setBool(!locationOutlet.on, forKey: "location")
+        userDefaults.setBool(locationOutlet.on, forKey: "location")
         userDefaults.synchronize()
     }
     
     @IBAction func experienceChanged(sender: AnyObject) {
-        userDefaults.setBool(!experienceOutlet.on, forKey: "experience")
+        userDefaults.setBool(experienceOutlet.on, forKey: "experience")
         userDefaults.synchronize()
     }
     
     @IBAction func certifiedChanged(sender: AnyObject) {
-        userDefaults.setBool(!certifiedOutlet.on, forKey: "certified")
+        userDefaults.setBool(certifiedOutlet.on, forKey: "certified")
         userDefaults.synchronize()
     }
     
     @IBAction func vibrationChanged(sender: AnyObject) {
-        userDefaults.setBool(!vibrationOutlet.on, forKey: "vibration")
+        userDefaults.setBool(vibrationOutlet.on, forKey: "vibration")
         userDefaults.synchronize()
     }
     
     @IBAction func voiceChanged(sender: AnyObject) {
-        userDefaults.setBool(!voiceOutlet.on, forKey: "voice")
+        userDefaults.setBool(voiceOutlet.on, forKey: "voice")
         userDefaults.synchronize()
     }
     

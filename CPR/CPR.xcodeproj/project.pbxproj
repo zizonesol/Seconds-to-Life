@@ -33,6 +33,7 @@
 		ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */; };
 		ED92E1081BF7F04E007D6AA7 /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */; };
 		ED92E10A1BF81C8F007D6AA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */; };
+		ED92E1121BF87B6D007D6AA7 /* Metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */; };
 		EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */; };
 		EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */; };
 		EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */; };
@@ -90,6 +91,7 @@
 		ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4"; sourceTree = "<group>"; };
 		ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTimer.swift; sourceTree = "<group>"; };
 		ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metronome.mp3; sourceTree = "<group>"; };
 		EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRViewController.swift; sourceTree = "<group>"; };
 		EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -182,6 +184,7 @@
 		ED3D82B91BEDB84800DFE105 /* CPR */ = {
 			isa = PBXGroup;
 			children = (
+				ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */,
 				ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */,
 				ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */,
 				ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */,
@@ -326,6 +329,7 @@
 				ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */,
 				ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */,
 				ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */,
+				ED92E1121BF87B6D007D6AA7 /* Metronome.mp3 in Resources */,
 				ED3D82C21BEDB84800DFE105 /* Assets.xcassets in Resources */,
 				ED3D82C01BEDB84800DFE105 /* Main.storyboard in Resources */,
 			);
