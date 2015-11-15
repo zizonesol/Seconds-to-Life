@@ -14,12 +14,16 @@ class CPRViewController: UIViewController {
     var timer = NSTimer()
     var audioPlayer = AVAudioPlayer()
     var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("CountUp", ofType: "wav")!)
+    let userDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var voiceEnabled = userDefaults.boolForKey("voice")
+        var vibrationEnabled = userDefaults.boolForKey("vibration")
+        
         do {
             audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-            timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "playClip", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "playClip", userInfo: nil, repeats: true)
         }
         catch {
             

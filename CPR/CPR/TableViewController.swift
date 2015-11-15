@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreLocation
+import Foundation
 
 class TableViewController: UITableViewController {
 
@@ -18,31 +20,90 @@ class TableViewController: UITableViewController {
     @IBOutlet var vibrationOutlet: UISwitch!
     @IBOutlet var voiceOutlet: UISwitch!
     
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    let manager = CLLocationManager()
+    
     @IBAction func pushNotificationChanged(sender: AnyObject) {
+        userDefaults.setBool(!pushOutlet.on, forKey: "push")
+        userDefaults.synchronize()
     }
     
     @IBAction func locationAuthorizedChanged(sender: AnyObject) {
+        if locationOutlet.on {
+            if CLLocationManager.authorizationStatus() == .NotDetermined {
+                manager.requestWhenInUseAuthorization()
+                
+            }
+            else {
+                let alertController = UIAlertController(
+                    title: "Background Location Access Disabled",
+                    message: "In order to be reached if there is a cpr emergency near you, please open this app's settings and set location access to 'Always'.",
+                    preferredStyle: .Alert)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+                alertController.addAction(cancelAction)
+                
+                let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+                    if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+                        UIApplication.sharedApplication().openURL(url)
+                    }
+                }
+                alertController.addAction(openAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            }
+        }
+        else {
+            let alertController = UIAlertController(
+                title: "Background Location Access Enabled",
+                message: "In order to be disable location access, please open this app's settings and set location access to 'Always'.",
+                preferredStyle: .Alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            
+            let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+                if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+                    UIApplication.sharedApplication().openURL(url)
+                }
+            }
+            alertController.addAction(openAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        userDefaults.setBool(!locationOutlet.on, forKey: "location")
+        userDefaults.synchronize()
     }
     
     @IBAction func experienceChanged(sender: AnyObject) {
+        userDefaults.setBool(!experienceOutlet.on, forKey: "experience")
+        userDefaults.synchronize()
     }
     
     @IBAction func certifiedChanged(sender: AnyObject) {
+        userDefaults.setBool(!certifiedOutlet.on, forKey: "certified")
+        userDefaults.synchronize()
     }
     
     @IBAction func vibrationChanged(sender: AnyObject) {
+        userDefaults.setBool(!vibrationOutlet.on, forKey: "vibration")
+        userDefaults.synchronize()
     }
     
     @IBAction func voiceChanged(sender: AnyObject) {
+        userDefaults.setBool(!voiceOutlet.on, forKey: "voice")
+        userDefaults.synchronize()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        
-        
-        pushOutlet.setOn(false, animated: true)
+        pushOutlet.on = userDefaults.boolForKey("push")
+        locationOutlet.on = userDefaults.boolForKey("location")
+        experienceOutlet.on = userDefaults.boolForKey("experience")
+        certifiedOutlet.on = userDefaults.boolForKey("certified")
+        vibrationOutlet.on = userDefaults.boolForKey("vibration")
+        voiceOutlet.on = userDefaults.boolForKey("voice")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

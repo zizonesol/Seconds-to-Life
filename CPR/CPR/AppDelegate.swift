@@ -43,8 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
             
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            userDefaults.setBool(false, forKey: "push")
+            userDefaults.setBool(false, forKey: "location")
+            userDefaults.setBool(false, forKey: "experience")
+            userDefaults.setBool(false, forKey: "certified")
+            userDefaults.setBool(false, forKey: "vibration")
+            userDefaults.setBool(false, forKey: "voice")
+            userDefaults.setBool(true, forKey: "HasLaunchedOnce")
+            userDefaults.synchronize()
             
             return true
         }
