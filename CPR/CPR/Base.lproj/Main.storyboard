@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG5-Tr-JQm">
-                                <rect key="frame" x="269" y="416" width="63" height="39"/>
+                                <rect key="frame" x="266" y="416" width="69" height="39"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -88,10 +88,10 @@
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZj-N6-J4I">
                                 <rect key="frame" x="84" y="115" width="433" height="369"/>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="0.32541952598401813" blue="0.31727706293054914" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Emergency">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <state key="normal" title="EMERGENCY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="IkC-as-TcJ" kind="show" id="yNq-7R-qFm"/>
@@ -105,10 +105,14 @@
                             <constraint firstAttribute="trailing" secondItem="qSG-qf-yfu" secondAttribute="trailing" id="0ee-FI-P9b"/>
                             <constraint firstItem="QZj-N6-J4I" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-72" id="2WQ-UB-dVb"/>
                             <constraint firstItem="QZj-N6-J4I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NVE-Sm-RC8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QZj-N6-J4I" secondAttribute="trailing" constant="63" id="Syo-4v-lGR"/>
                             <constraint firstItem="QZj-N6-J4I" firstAttribute="trailing" secondItem="qSG-qf-yfu" secondAttribute="trailing" constant="-83" id="TQl-N9-4Y6"/>
+                            <constraint firstItem="QZj-N6-J4I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TfR-6Q-EaF"/>
+                            <constraint firstItem="QZj-N6-J4I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="eAp-1z-ImD"/>
                             <constraint firstItem="qSG-qf-yfu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gTJ-8n-bfq"/>
                             <constraint firstItem="QZj-N6-J4I" firstAttribute="leading" secondItem="qSG-qf-yfu" secondAttribute="leading" constant="84" id="iT7-cO-v5U"/>
                             <constraint firstItem="qSG-qf-yfu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vjn-7X-Qhb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QZj-N6-J4I" secondAttribute="trailing" constant="63" id="znm-qf-m0M"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -324,44 +328,47 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="check-response-during-cpr-course" translatesAutoresizingMaskIntoConstraints="NO" id="80b-5K-4ZJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="check-response-during-cpr-course" translatesAutoresizingMaskIntoConstraints="NO" id="80b-5K-4ZJ">
                                 <rect key="frame" x="20" y="78" width="560" height="329"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Is the person responsive?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COL-lq-Zpb">
-                                <rect key="frame" x="203" y="28" width="195" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Is the person responsive?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COL-lq-Zpb">
+                                <rect key="frame" x="183" y="28" width="235" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE6-9x-6Bg">
-                                <rect key="frame" x="453" y="465" width="112" height="62"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="rV1-jV-yaU"/>
-                                </constraints>
-                                <state key="normal" title="No">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Tyt-SI-4NT" kind="show" id="Mvq-aL-jvf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugl-aX-ACW">
-                                <rect key="frame" x="20" y="465" width="112" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugl-aX-ACW">
+                                <rect key="frame" x="45" y="465" width="112" height="62"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="EhJ-7J-M8U"/>
-                                    <constraint firstAttribute="width" constant="112" id="cNg-lX-7LA"/>
+                                    <constraint firstAttribute="height" constant="62" id="9zK-AA-3dU"/>
+                                    <constraint firstAttribute="width" constant="112" id="Oym-mt-g6f"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Yes">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="0sB-zO-7x5" kind="show" id="8ol-LR-Exq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE6-9x-6Bg">
+                                <rect key="frame" x="437" y="465" width="112" height="62"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="OEh-1n-wDT"/>
+                                    <constraint firstAttribute="width" constant="112" id="rV1-jV-yaU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tyt-SI-4NT" kind="show" id="Mvq-aL-jvf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -372,8 +379,10 @@
                             <constraint firstItem="5B5-2n-h2W" firstAttribute="leading" secondItem="F9s-4q-6pJ" secondAttribute="leading" constant="190" id="8ZI-1j-HrK"/>
                             <constraint firstItem="zE6-9x-6Bg" firstAttribute="baseline" secondItem="Ugl-aX-ACW" secondAttribute="firstBaseline" id="AjB-Gq-Zfs"/>
                             <constraint firstItem="80b-5K-4ZJ" firstAttribute="trailing" secondItem="F9s-4q-6pJ" secondAttribute="trailingMargin" id="Big-2R-A26"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zE6-9x-6Bg" secondAttribute="trailing" constant="28" id="CrZ-Zt-Xlc"/>
                             <constraint firstItem="Ugl-aX-ACW" firstAttribute="top" secondItem="80b-5K-4ZJ" secondAttribute="bottom" constant="58" id="FRq-xW-Yht"/>
                             <constraint firstItem="80b-5K-4ZJ" firstAttribute="top" secondItem="COL-lq-Zpb" secondAttribute="bottom" constant="29" id="Qhn-P8-oU9"/>
+                            <constraint firstItem="Ugl-aX-ACW" firstAttribute="leading" secondItem="F9s-4q-6pJ" secondAttribute="leadingMargin" constant="25" id="TcE-yt-wP6"/>
                             <constraint firstItem="COL-lq-Zpb" firstAttribute="top" secondItem="HG6-oi-Rti" secondAttribute="bottom" constant="8" symbolic="YES" id="ZwZ-dU-a6b"/>
                             <constraint firstItem="80b-5K-4ZJ" firstAttribute="centerX" secondItem="COL-lq-Zpb" secondAttribute="centerX" id="cQ4-SQ-KUb"/>
                             <constraint firstItem="5B5-2n-h2W" firstAttribute="top" secondItem="F9s-4q-6pJ" secondAttribute="top" constant="157" id="cTQ-Ad-lnh"/>
@@ -415,7 +424,7 @@
                                     <constraint firstAttribute="height" constant="208" id="zAJ-3N-HAI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1U-nd-RFR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1U-nd-RFR">
                                 <rect key="frame" x="20" y="20" width="560" height="45"/>
                                 <animations/>
                                 <constraints>
@@ -433,6 +442,7 @@
                                     <constraint firstAttribute="width" constant="112" id="2lk-qD-NmH"/>
                                     <constraint firstAttribute="height" constant="62" id="zle-WN-dLA"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Start Timer"/>
                                 <connections>
                                     <segue destination="88c-5c-pJJ" kind="show" id="mrz-pu-qAq"/>
@@ -639,10 +649,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ewc-6d-e65" firstAttribute="top" secondItem="MJJ-ft-ehz" secondAttribute="bottom" id="3ch-Tq-BW7"/>
                             <constraint firstItem="MJJ-ft-ehz" firstAttribute="top" secondItem="UAv-s9-li1" secondAttribute="bottom" constant="-20" id="H2c-S6-AUc"/>
+                            <constraint firstItem="MJJ-ft-ehz" firstAttribute="top" secondItem="Gce-c5-uVf" secondAttribute="topMargin" id="Jft-4i-ccm"/>
                             <constraint firstItem="Ewc-6d-e65" firstAttribute="top" secondItem="MJJ-ft-ehz" secondAttribute="bottom" id="Jl9-Ab-wv3"/>
+                            <constraint firstItem="MJJ-ft-ehz" firstAttribute="centerX" secondItem="Gce-c5-uVf" secondAttribute="centerX" id="ORW-19-yig"/>
+                            <constraint firstItem="MJJ-ft-ehz" firstAttribute="leading" secondItem="Gce-c5-uVf" secondAttribute="leadingMargin" constant="-20" id="WDi-uk-9mM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJJ-ft-ehz" secondAttribute="trailing" constant="-20" id="c0Y-Ep-33A"/>
                             <constraint firstItem="MJJ-ft-ehz" firstAttribute="leading" secondItem="Gce-c5-uVf" secondAttribute="leading" id="lft-XJ-ejV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MJJ-ft-ehz" secondAttribute="trailing" constant="-20" id="t67-PW-HAh"/>
+                            <constraint firstItem="MJJ-ft-ehz" firstAttribute="centerY" secondItem="Gce-c5-uVf" secondAttribute="centerY" id="vVA-tc-2Ks"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -662,21 +678,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you feel their pulse at least 5 times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-uj-wlP">
-                                <rect key="frame" x="144" y="28" width="296" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you feel their pulse at least 5 times?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-uj-wlP">
+                                <rect key="frame" x="122" y="57" width="357" height="24"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z54-js-Awx">
-                                <rect key="frame" x="83" y="511" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z54-js-Awx">
+                                <rect key="frame" x="83" y="501" width="50" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Yes"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSE-kT-xTs">
-                                <rect key="frame" x="486" y="511" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSE-kT-xTs">
+                                <rect key="frame" x="466" y="501" width="50" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="No"/>
                                 <connections>
                                     <segue destination="2dP-U4-2NB" kind="show" id="ZPv-pF-gbd"/>
@@ -711,29 +729,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is the person a infant or an adult?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-wu-qYh">
-                                <rect key="frame" x="169" y="28" width="255" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jea-LA-wG4">
+                                <rect key="frame" x="264" y="285" width="65" height="40"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jea-LA-wG4">
-                                <rect key="frame" x="282" y="290" width="36" height="30"/>
-                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Adult"/>
                                 <connections>
                                     <segue destination="hzL-1G-V0w" kind="show" id="wX3-B0-mB5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-lS-16d">
-                                <rect key="frame" x="280" y="206" width="40" height="30"/>
+                                <rect key="frame" x="264" y="207" width="65" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Infant"/>
                                 <connections>
                                     <segue destination="SjF-ER-QHa" kind="show" id="BqL-ZO-epk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is the person a infant or an adult?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-wu-qYh">
+                                <rect key="frame" x="149" y="57" width="302" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -763,7 +783,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="First find the location where you will be applying pressure and use only two fingers to perform cpr." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i9-fJ-42v">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="First find the location where you will be applying pressure and use only two fingers to perform cpr." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i9-fJ-42v">
                                 <rect key="frame" x="20" y="20" width="560" height="45"/>
                                 <animations/>
                                 <constraints>
@@ -773,21 +793,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-4I-pC8">
-                                <rect key="frame" x="284" y="542" width="32" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infant-cpr-Common-Injuries-Article" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-x4-Zvh">
+                                <rect key="frame" x="20" y="90" width="560" height="430"/>
                                 <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-4I-pC8">
+                                <rect key="frame" x="270" y="533" width="60" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="dyW-MY-SNf" kind="show" id="sZ3-r9-Sea"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="infant-cpr-Common-Injuries-Article" translatesAutoresizingMaskIntoConstraints="NO" id="d8g-x4-Zvh">
-                                <rect key="frame" x="20" y="90" width="560" height="430"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="8i9-fJ-42v" secondAttribute="leading" id="JvF-4B-O6M"/>
+                            <constraint firstItem="8i9-fJ-42v" firstAttribute="centerX" secondItem="aYT-Nz-bgv" secondAttribute="centerX" id="iiK-PW-1UH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8i9-fJ-42v" secondAttribute="trailing" id="pTc-sd-vOa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq8-PD-ZzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -806,13 +832,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First find the location where you will be applying pressure." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-XL-8MN">
-                                <rect key="frame" x="20" y="28" width="560" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First find the location where you will be applying pressure." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-XL-8MN">
+                                <rect key="frame" x="37" y="28" width="526" height="37"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="sPC-gw-Z3d"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -821,8 +847,9 @@
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmu-AC-HBw">
-                                <rect key="frame" x="284" y="550" width="32" height="30"/>
+                                <rect key="frame" x="270" y="540" width="60" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="mF0-QX-pZ3" kind="show" id="LNz-6h-Sl3"/>
@@ -884,28 +911,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interlock your fingers like so, and position them above the chest." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLK-3k-7JD">
-                                <rect key="frame" x="20" y="20" width="560" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpr-interlocked" translatesAutoresizingMaskIntoConstraints="NO" id="PCD-o6-PSH">
                                 <rect key="frame" x="20" y="62" width="566" height="461"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-zb-I4k">
-                                <rect key="frame" x="287" y="550" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HK-zb-I4k">
+                                <rect key="frame" x="270" y="540" width="60" height="40"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="dyW-MY-SNf" kind="show" id="jwx-7X-XvA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Interlock your fingers like so, and position them above the chest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLK-3k-7JD">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rLK-3k-7JD" firstAttribute="centerX" secondItem="uEl-sf-pns" secondAttribute="centerX" id="JDm-h9-pNO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rLK-3k-7JD" secondAttribute="leading" id="ZJM-RO-AzL"/>
+                            <constraint firstItem="9XN-ca-jKa" firstAttribute="top" secondItem="9HK-zb-I4k" secondAttribute="bottom" constant="20" id="q3S-VQ-447"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rLK-3k-7JD" secondAttribute="trailing" id="yXM-on-Sr3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RT-Sp-ZWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1214,7 +1248,7 @@
         <image name="stock-photo-check-your-pulse-on-neck-166002530" width="450" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uhg-8a-OmF"/>
+        <segue reference="1or-Rz-KwD"/>
         <segue reference="sZ3-r9-Sea"/>
     </inferredMetricsTieBreakers>
 </document>
