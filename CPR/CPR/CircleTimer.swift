@@ -44,9 +44,8 @@ class CircleTimer: UIView {
         circle.path = UIBezierPath(arcCenter: center, radius: CGFloat(radius), startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: clockwise).CGPath
         
         // Configure the circle
-        circle.fillColor = UIColor.blackColor().CGColor
         circle.strokeColor = UIColor.redColor().CGColor
-        circle.lineWidth = 5
+        circle.lineWidth = 7
         
         // When it gets to the end of its animation, leave it at 0% stroke filled
         circle.strokeEnd = 0.0

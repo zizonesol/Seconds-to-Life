@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82BA1BEDB84800DFE105 /* AppDelegate.swift */; };
+		ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82BC1BEDB84800DFE105 /* ViewController.swift */; };
+		ED3D82C01BEDB84800DFE105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3D82BE1BEDB84800DFE105 /* Main.storyboard */; };
+		ED3D82C21BEDB84800DFE105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3D82C11BEDB84800DFE105 /* Assets.xcassets */; };
+		ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3D82C31BEDB84800DFE105 /* LaunchScreen.storyboard */; };
+		ED3D82D01BEDB84800DFE105 /* CPRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82CF1BEDB84800DFE105 /* CPRTests.swift */; };
+		ED3D82DB1BEDB84800DFE105 /* CPRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82DA1BEDB84800DFE105 /* CPRUITests.swift */; };
+		ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */; };
+		ED3D83051BF030A900DFE105 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D82FE1BF030A900DFE105 /* Bolts.framework */; };
+		ED3D83061BF030A900DFE105 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D82FF1BF030A900DFE105 /* Parse.framework */; };
+		ED3D83071BF030A900DFE105 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */; };
+		ED3D830B1BF030A900DFE105 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83041BF030A900DFE105 /* ParseUI.framework */; };
+		ED3D830D1BF030F000DFE105 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */; };
+		ED3D830F1BF030F600DFE105 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D830E1BF030F600DFE105 /* CFNetwork.framework */; };
+		ED3D83111BF030FC00DFE105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */; };
+		ED3D83131BF0310300DFE105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83121BF0310300DFE105 /* CoreLocation.framework */; };
+		ED3D83151BF0310800DFE105 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83141BF0310800DFE105 /* QuartzCore.framework */; };
+		ED3D83171BF0310C00DFE105 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83161BF0310C00DFE105 /* Security.framework */; };
+		ED3D83191BF0311100DFE105 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D83181BF0311100DFE105 /* StoreKit.framework */; };
+		ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */; };
+		ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831C1BF0311F00DFE105 /* libz.tbd */; };
+		ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */; };
+		ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */; };
+		ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */; };
+		ED92E1081BF7F04E007D6AA7 /* CircleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */; };
+		ED92E10A1BF81C8F007D6AA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */; };
+		ED92E1121BF87B6D007D6AA7 /* Metronome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */; };
+		EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */; };
+		EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */; };
+		EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */; };
+		EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED3D82CC1BEDB84800DFE105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3D82AF1BEDB84800DFE105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3D82B61BEDB84800DFE105;
+			remoteInfo = CPR;
+		};
+		ED3D82D71BEDB84800DFE105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3D82AF1BEDB84800DFE105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3D82B61BEDB84800DFE105;
+			remoteInfo = CPR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED3D82B71BEDB84800DFE105 /* Seconds to Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seconds to Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3D82BA1BEDB84800DFE105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED3D82BC1BEDB84800DFE105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED3D82BF1BEDB84800DFE105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED3D82C11BEDB84800DFE105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED3D82C41BEDB84800DFE105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED3D82C61BEDB84800DFE105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D82CB1BEDB84800DFE105 /* Seconds to Life.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seconds to Life.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3D82CF1BEDB84800DFE105 /* CPRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRTests.swift; sourceTree = "<group>"; };
+		ED3D82D11BEDB84800DFE105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D82D61BEDB84800DFE105 /* Seconds to Life.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seconds to Life.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3D82DA1BEDB84800DFE105 /* CPRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPRUITests.swift; sourceTree = "<group>"; };
+		ED3D82DC1BEDB84800DFE105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		ED3D82FE1BF030A900DFE105 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ED3D82FF1BF030A900DFE105 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		ED3D83041BF030A900DFE105 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ED3D830E1BF030F600DFE105 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED3D83121BF0310300DFE105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ED3D83141BF0310800DFE105 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED3D83161BF0310C00DFE105 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED3D83181BF0311100DFE105 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ED3D831C1BF0311F00DFE105 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Beep.wav; sourceTree = "<group>"; };
+		ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CountUp.wav; sourceTree = "<group>"; };
+		ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4"; sourceTree = "<group>"; };
+		ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTimer.swift; sourceTree = "<group>"; };
+		ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metronome.mp3; sourceTree = "<group>"; };
+		EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPRViewController.swift; sourceTree = "<group>"; };
+		EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED3D82B41BEDB84800DFE105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD860801BF5B12400D32C9C /* CoreAudio.framework in Frameworks */,
+				ED3D831F1BF0312500DFE105 /* libsqlite3.tbd in Frameworks */,
+				ED3D831D1BF0311F00DFE105 /* libz.tbd in Frameworks */,
+				ED3D831B1BF0311800DFE105 /* SystemConfiguration.framework in Frameworks */,
+				ED3D83191BF0311100DFE105 /* StoreKit.framework in Frameworks */,
+				ED3D83171BF0310C00DFE105 /* Security.framework in Frameworks */,
+				ED3D83151BF0310800DFE105 /* QuartzCore.framework in Frameworks */,
+				ED3D83131BF0310300DFE105 /* CoreLocation.framework in Frameworks */,
+				ED3D83111BF030FC00DFE105 /* CoreGraphics.framework in Frameworks */,
+				ED3D830F1BF030F600DFE105 /* CFNetwork.framework in Frameworks */,
+				ED3D830D1BF030F000DFE105 /* AudioToolbox.framework in Frameworks */,
+				ED3D83061BF030A900DFE105 /* Parse.framework in Frameworks */,
+				ED3D83071BF030A900DFE105 /* ParseCrashReporting.framework in Frameworks */,
+				ED3D830B1BF030A900DFE105 /* ParseUI.framework in Frameworks */,
+				ED3D83051BF030A900DFE105 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82C81BEDB84800DFE105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82D31BEDB84800DFE105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7656EF6391629ABBEB431ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8607F1BF5B12400D32C9C /* CoreAudio.framework */,
+				ED3D831E1BF0312500DFE105 /* libsqlite3.tbd */,
+				ED3D831C1BF0311F00DFE105 /* libz.tbd */,
+				ED3D831A1BF0311800DFE105 /* SystemConfiguration.framework */,
+				ED3D83181BF0311100DFE105 /* StoreKit.framework */,
+				ED3D83161BF0310C00DFE105 /* Security.framework */,
+				ED3D83141BF0310800DFE105 /* QuartzCore.framework */,
+				ED3D83121BF0310300DFE105 /* CoreLocation.framework */,
+				ED3D83101BF030FC00DFE105 /* CoreGraphics.framework */,
+				ED3D830E1BF030F600DFE105 /* CFNetwork.framework */,
+				ED3D830C1BF030F000DFE105 /* AudioToolbox.framework */,
+				ED3D82FE1BF030A900DFE105 /* Bolts.framework */,
+				ED3D82FF1BF030A900DFE105 /* Parse.framework */,
+				ED3D83001BF030A900DFE105 /* ParseCrashReporting.framework */,
+				ED3D83041BF030A900DFE105 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED3D82AE1BEDB84800DFE105 = {
+			isa = PBXGroup;
+			children = (
+				ED3D82B91BEDB84800DFE105 /* CPR */,
+				ED3D82CE1BEDB84800DFE105 /* CPRTests */,
+				ED3D82D91BEDB84800DFE105 /* CPRUITests */,
+				ED3D82B81BEDB84800DFE105 /* Products */,
+				7656EF6391629ABBEB431ABD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED3D82B81BEDB84800DFE105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D82B71BEDB84800DFE105 /* Seconds to Life.app */,
+				ED3D82CB1BEDB84800DFE105 /* Seconds to Life.xctest */,
+				ED3D82D61BEDB84800DFE105 /* Seconds to Life.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3D82B91BEDB84800DFE105 /* CPR */ = {
+			isa = PBXGroup;
+			children = (
+				ED92E1111BF87B6D007D6AA7 /* Metronome.mp3 */,
+				ED92E1091BF81C8F007D6AA7 /* TableViewController.swift */,
+				ED92E0FE1BF7DD33007D6AA7 /* British Heart Foundation - Vinnie Jones' hard and fast Hands-only CPR.mp4 */,
+				ED92E0F81BF5CE7E007D6AA7 /* CountUp.wav */,
+				ED92E0F61BF5CAD8007D6AA7 /* Beep.wav */,
+				ED3D82BA1BEDB84800DFE105 /* AppDelegate.swift */,
+				ED3D82BC1BEDB84800DFE105 /* ViewController.swift */,
+				ED3D82BE1BEDB84800DFE105 /* Main.storyboard */,
+				ED3D82C11BEDB84800DFE105 /* Assets.xcassets */,
+				ED3D82C31BEDB84800DFE105 /* LaunchScreen.storyboard */,
+				ED3D82C61BEDB84800DFE105 /* Info.plist */,
+				ED3D82E81BF0176E00DFE105 /* TimerViewController.swift */,
+				EDF45FE11BF412EF006F6250 /* CircularLoaderView.swift */,
+				EDD8607B1BF5A51400D32C9C /* SettingsViewController.swift */,
+				EDD8607D1BF5AFFA00D32C9C /* CPRViewController.swift */,
+				ED92E1071BF7F04E007D6AA7 /* CircleTimer.swift */,
+			);
+			path = CPR;
+			sourceTree = "<group>";
+		};
+		ED3D82CE1BEDB84800DFE105 /* CPRTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D82CF1BEDB84800DFE105 /* CPRTests.swift */,
+				ED3D82D11BEDB84800DFE105 /* Info.plist */,
+			);
+			path = CPRTests;
+			sourceTree = "<group>";
+		};
+		ED3D82D91BEDB84800DFE105 /* CPRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D82DA1BEDB84800DFE105 /* CPRUITests.swift */,
+				ED3D82DC1BEDB84800DFE105 /* Info.plist */,
+			);
+			path = CPRUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED3D82B61BEDB84800DFE105 /* Seconds to Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3D82DF1BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to Life" */;
+			buildPhases = (
+				ED3D82B31BEDB84800DFE105 /* Sources */,
+				ED3D82B41BEDB84800DFE105 /* Frameworks */,
+				ED3D82B51BEDB84800DFE105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Seconds to Life";
+			productName = CPR;
+			productReference = ED3D82B71BEDB84800DFE105 /* Seconds to Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED3D82CA1BEDB84800DFE105 /* Seconds to LifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3D82E21BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to LifeTests" */;
+			buildPhases = (
+				ED3D82C71BEDB84800DFE105 /* Sources */,
+				ED3D82C81BEDB84800DFE105 /* Frameworks */,
+				ED3D82C91BEDB84800DFE105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3D82CD1BEDB84800DFE105 /* PBXTargetDependency */,
+			);
+			name = "Seconds to LifeTests";
+			productName = CPRTests;
+			productReference = ED3D82CB1BEDB84800DFE105 /* Seconds to Life.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED3D82D51BEDB84800DFE105 /* Seconds to LifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3D82E51BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to LifeUITests" */;
+			buildPhases = (
+				ED3D82D21BEDB84800DFE105 /* Sources */,
+				ED3D82D31BEDB84800DFE105 /* Frameworks */,
+				ED3D82D41BEDB84800DFE105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3D82D81BEDB84800DFE105 /* PBXTargetDependency */,
+			);
+			name = "Seconds to LifeUITests";
+			productName = CPRUITests;
+			productReference = ED3D82D61BEDB84800DFE105 /* Seconds to Life.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED3D82AF1BEDB84800DFE105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kay Lab";
+				TargetAttributes = {
+					ED3D82B61BEDB84800DFE105 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					ED3D82CA1BEDB84800DFE105 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = ED3D82B61BEDB84800DFE105;
+					};
+					ED3D82D51BEDB84800DFE105 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = ED3D82B61BEDB84800DFE105;
+					};
+				};
+			};
+			buildConfigurationList = ED3D82B21BEDB84800DFE105 /* Build configuration list for PBXProject "Seconds to Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED3D82AE1BEDB84800DFE105;
+			productRefGroup = ED3D82B81BEDB84800DFE105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED3D82B61BEDB84800DFE105 /* Seconds to Life */,
+				ED3D82CA1BEDB84800DFE105 /* Seconds to LifeTests */,
+				ED3D82D51BEDB84800DFE105 /* Seconds to LifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED3D82B51BEDB84800DFE105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED92E0F71BF5CAD8007D6AA7 /* Beep.wav in Resources */,
+				ED3D82C51BEDB84800DFE105 /* LaunchScreen.storyboard in Resources */,
+				ED92E0F91BF5CE7E007D6AA7 /* CountUp.wav in Resources */,
+				ED92E1121BF87B6D007D6AA7 /* Metronome.mp3 in Resources */,
+				ED3D82C21BEDB84800DFE105 /* Assets.xcassets in Resources */,
+				ED3D82C01BEDB84800DFE105 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82C91BEDB84800DFE105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82D41BEDB84800DFE105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED3D82B31BEDB84800DFE105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3D82BD1BEDB84800DFE105 /* ViewController.swift in Sources */,
+				ED3D82E91BF0176E00DFE105 /* TimerViewController.swift in Sources */,
+				ED92E1081BF7F04E007D6AA7 /* CircleTimer.swift in Sources */,
+				ED92E10A1BF81C8F007D6AA7 /* TableViewController.swift in Sources */,
+				EDD8607E1BF5AFFA00D32C9C /* CPRViewController.swift in Sources */,
+				EDF45FE21BF412EF006F6250 /* CircularLoaderView.swift in Sources */,
+				EDD8607C1BF5A51400D32C9C /* SettingsViewController.swift in Sources */,
+				ED3D82BB1BEDB84800DFE105 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82C71BEDB84800DFE105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3D82D01BEDB84800DFE105 /* CPRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3D82D21BEDB84800DFE105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3D82DB1BEDB84800DFE105 /* CPRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED3D82CD1BEDB84800DFE105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3D82B61BEDB84800DFE105 /* Seconds to Life */;
+			targetProxy = ED3D82CC1BEDB84800DFE105 /* PBXContainerItemProxy */;
+		};
+		ED3D82D81BEDB84800DFE105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3D82B61BEDB84800DFE105 /* Seconds to Life */;
+			targetProxy = ED3D82D71BEDB84800DFE105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED3D82BE1BEDB84800DFE105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3D82BF1BEDB84800DFE105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED3D82C31BEDB84800DFE105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3D82C41BEDB84800DFE105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED3D82DD1BEDB84800DFE105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED3D82DE1BEDB84800DFE105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED3D82E01BEDB84800DFE105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CPR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPR;
+				PRODUCT_NAME = "Seconds to Life";
+			};
+			name = Debug;
+		};
+		ED3D82E11BEDB84800DFE105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CPR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPR;
+				PRODUCT_NAME = "Seconds to Life";
+			};
+			name = Release;
+		};
+		ED3D82E31BEDB84800DFE105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CPRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPRTests;
+				PRODUCT_NAME = "Seconds to Life";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seconds to Life.app/Seconds to Life";
+			};
+			name = Debug;
+		};
+		ED3D82E41BEDB84800DFE105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CPRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPRTests;
+				PRODUCT_NAME = "Seconds to Life";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seconds to Life.app/Seconds to Life";
+			};
+			name = Release;
+		};
+		ED3D82E61BEDB84800DFE105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CPRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPRUITests;
+				PRODUCT_NAME = "Seconds to Life";
+				TEST_TARGET_NAME = CPR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ED3D82E71BEDB84800DFE105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CPRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamRocket.CPRUITests;
+				PRODUCT_NAME = "Seconds to Life";
+				TEST_TARGET_NAME = CPR;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED3D82B21BEDB84800DFE105 /* Build configuration list for PBXProject "Seconds to Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D82DD1BEDB84800DFE105 /* Debug */,
+				ED3D82DE1BEDB84800DFE105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3D82DF1BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D82E01BEDB84800DFE105 /* Debug */,
+				ED3D82E11BEDB84800DFE105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3D82E21BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to LifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D82E31BEDB84800DFE105 /* Debug */,
+				ED3D82E41BEDB84800DFE105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3D82E51BEDB84800DFE105 /* Build configuration list for PBXNativeTarget "Seconds to LifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3D82E61BEDB84800DFE105 /* Debug */,
+				ED3D82E71BEDB84800DFE105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED3D82AF1BEDB84800DFE105 /* Project object */;
+}
